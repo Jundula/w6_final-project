@@ -17,7 +17,7 @@ function info() {
     async function fetchFilms() {
       setLoading(true);
       const { data } = await axios.get(
-        `http://www.omdbapi.com/?i=${router.query.input}&type=${router.query.type}&page=${router.query.page}&apikey=a7d88c10`
+        `https://www.omdbapi.com/?i=${router.query.input}&type=${router.query.type}&page=${router.query.page}&apikey=a7d88c10`
       );
       setFilm(data);
       setLoading(false);

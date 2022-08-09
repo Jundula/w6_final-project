@@ -27,7 +27,7 @@ function Search() {
   async function fetchFilms() {
     setLoading(true);
     const { data } = await axios.get(
-      `http://www.omdbapi.com/?i=tt3896198&type=${type}&page=${page}&apikey=7c513fa5&s=${
+      `https://www.omdbapi.com/?i=tt3896198&type=${type}&page=${page}&apikey=7c513fa5&s=${
         router.query.searcInput || "2021"
       }`
     );
