@@ -26,9 +26,11 @@ function Header() {
             </p>
           </Link>
           {/* <SearchIcon className='md:hidden h-6 px-4 ml-8'/> */}
-          <p className=" font-semibold px-8 mr-8 whitespace-nowrap hidden md:inline-flex">
+          <Link href="/search">
+          <p className=" font-semibold px-8 mr-8 whitespace-nowrap hidden md:inline-flex cursor-pointer">
             Find your Film
           </p>
+          </Link>
           <p
             className=" text-xs px-4 md:text-base font-semibold md:px-8 bg-black text-white rounded-full py-2 hover:bg-white 
           hover:text-black hover:border-black hover:border hover:shadow-md cursor-pointer transition-all duration-300 ease"
